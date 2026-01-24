@@ -1,65 +1,142 @@
-# Getting Started with Create React App
+# Lens & Light Photography Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive photography portfolio website built with React, showcasing stunning photo collections with smooth animations and an elegant dark theme.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### 🎨 **Modern Design**
 
-### `npm start`
+- Sleek dark theme with neutral color palette
+- Responsive design that works on all devices
+- Smooth animations and transitions
+- Professional typography with custom fonts
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 📸 **Photo Gallery**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Organized photo collections (Portraits, Landscapes, Urban, Wildlife, Architecture, Street)
+- Interactive album browsing
+- Full-screen image modal with navigation
+- Lazy loading for optimal performance
+- Hover effects and smooth scaling animations
 
-### `npm test`
+### 🖥️ **User Experience**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Fixed navigation header with mobile menu
+- Hero slider with auto-play functionality
+- Featured collections on homepage
+- Contact form with validation
+- Social media integration
 
-### `npm run build`
+### ⚡ **Performance**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Optimized images with lazy loading
+- Intersection Observer for efficient rendering
+- Minimal bundle size with React
+- Fast loading times
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🛠️ **Technical Features**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Built with React 19
+- Styled with Tailwind CSS v4
+- Lucide React icons
+- Mobile-first responsive design
+- Clean component architecture
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   git clone https://github.com/bdesai2/AI_Photo-Gallery.git
+   cd AI_Photo-Gallery
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Install dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. Start the development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Code Splitting
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Home**: View the hero slider and featured photo collections
+- **Gallery**: Browse all photo albums
+- **Album View**: Click on any album to view individual photos
+- **Image Modal**: Click on photos to view them in full screen with navigation
+- **Contact**: Use the contact form to get in touch
 
-### Analyzing the Bundle Size
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+src/
+├── components/
+│   ├── Header.js          # Navigation component
+│   ├── HeroSlider.js      # Hero image slider
+│   ├── Gallery.js         # Album grid display
+│   ├── AlbumView.js       # Individual album view
+│   ├── ImageModal.js      # Full-screen image viewer
+│   ├── ContactForm.js     # Contact form component
+│   └── Footer.js          # Footer component
+├── data.js                # Photo album data
+├── App.js                 # Main application component
+├── index.js               # Application entry point
+└── index.css              # Global styles
+```
 
-### Making a Progressive Web App
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **React** - Frontend framework
+- **Tailwind CSS** - Utility-first CSS framework
+- **Lucide React** - Icon library
+- **Unsplash** - Stock photography API (for demo images)
 
-### Advanced Configuration
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature-name`
+3. Commit your changes: `git commit -am 'Add new feature'`
+4. Push to the branch: `git push origin feature-name`
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+- Email: contact@lensandlight.com
+- Instagram: [@lensandlight](https://instagram.com/lensandlight)
+- Facebook: [Lens & Light Photography](https://facebook.com/lensandlight)
+
+---
+
+## Changelog
+
+### Version 1.0.0 (January 24, 2026)
+
+- **Initial Release**
+  - Complete photography portfolio website
+  - 6 photo collections with sample images
+  - Responsive design for all devices
+  - Dark theme with modern UI
+  - Interactive gallery with modal viewer
+  - Contact form functionality
+  - Optimized performance with lazy loading
+
+### Version 0.1.0 (Development)
+
+- Basic React setup with Tailwind CSS
+- Initial component structure
+- PostCSS configuration fixes
+- Component refactoring for better organization
 
 ### Deployment
 

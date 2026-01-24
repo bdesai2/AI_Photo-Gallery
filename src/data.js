@@ -1,0 +1,81 @@
+export const heroImages = [
+  { url: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=1600&h=900&fit=crop', alt: 'Featured Photography 1' },
+  { url: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&h=900&fit=crop', alt: 'Featured Photography 2' },
+  { url: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1600&h=900&fit=crop', alt: 'Featured Photography 3' },
+  { url: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1600&h=900&fit=crop', alt: 'Featured Photography 4' }
+];
+
+export const albums = [
+  {
+    id: 1,
+    title: 'Portraits',
+    thumbnail: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&h=800&fit=crop',
+    count: 24,
+    images: [
+      'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1200&h=800&fit=crop',
+      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=800&fit=crop',
+      'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=1200&h=800&fit=crop',
+      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=1200&h=800&fit=crop'
+    ]
+  },
+  {
+    id: 2,
+    title: 'Landscapes',
+    thumbnail: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=800&fit=crop',
+    count: 32,
+    images: [
+      'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop',
+      'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&h=800&fit=crop',
+      'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&h=800&fit=crop',
+      'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1200&h=800&fit=crop'
+    ]
+  },
+  {
+    id: 3,
+    title: 'Urban',
+    thumbnail: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800&h=800&fit=crop',
+    count: 18,
+    images: [
+      'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200&h=800&fit=crop',
+      'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1200&h=800&fit=crop',
+      'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1200&h=800&fit=crop',
+      'https://images.unsplash.com/photo-1514565131-fce0801e5785?w=1200&h=800&fit=crop'
+    ]
+  },
+  {
+    id: 4,
+    title: 'Wildlife',
+    thumbnail: 'https://images.unsplash.com/photo-1484406566174-9da000fda645?w=800&h=800&fit=crop',
+    count: 28,
+    images: [
+      'https://images.unsplash.com/photo-1484406566174-9da000fda645?w=1200&h=800&fit=crop',
+      'https://images.unsplash.com/photo-1456926631375-92c8ce872def?w=1200&h=800&fit=crop',
+      'https://images.unsplash.com/photo-1535083783855-76ae62b2914e?w=1200&h=800&fit=crop',
+      'https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=1200&h=800&fit=crop'
+    ]
+  },
+  {
+    id: 5,
+    title: 'Architecture',
+    thumbnail: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&h=800&fit=crop',
+    count: 21,
+    images: [
+      'https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1200&h=800&fit=crop',
+      'https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=1200&h=800&fit=crop',
+      'https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?w=1200&h=800&fit=crop',
+      'https://images.unsplash.com/photo-1502005097973-6a7082348e28?w=1200&h=800&fit=crop'
+    ]
+  },
+  {
+    id: 6,
+    title: 'Street',
+    thumbnail: 'https://images.unsplash.com/photo-1520034475321-cbe63696469a?w=800&h=800&fit=crop',
+    count: 16,
+    images: [
+      'https://images.unsplash.com/photo-1520034475321-cbe63696469a?w=1200&h=800&fit=crop',
+      'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=1200&h=800&fit=crop',
+      'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=1200&h=800&fit=crop',
+      'https://images.unsplash.com/photo-1513537086458-bc618b89370a?w=1200&h=800&fit=crop'
+    ]
+  }
+];
