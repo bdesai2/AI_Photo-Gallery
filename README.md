@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# AI Photo Gallery (Lens & Light)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React photo gallery demo (split into components).
 
-## Available Scripts
+## Project overview
 
-In the project directory, you can run:
+- `src/App.js` — app composition, state and handlers
+- `src/components/` — `Header`, `HeroCarousel`, `AlbumsGrid`, `ContactForm`, `GalleryModal`
+- `src/data/images.json` — central JSON for hero and album images (edit this file to update content)
 
-### `npm start`
+## How to run
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Install dependencies and start the dev server:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```powershell
+cd "Photo-Gallery/AI_Photo-Gallery"
+npm install
+npm start
+```
 
-### `npm test`
+If using `bun`:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```powershell
+bun install
+bun dev
+```
 
-### `npm run build`
+## Updating images
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Edit `src/data/images.json` to change hero images or albums. The file is imported at build time. For runtime-updatable images, host the JSON remotely and fetch it on startup (add a small loader in `src/lib/utils.js`).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Versioning
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Project version: 0.1.0
+- Last updated: 2026-02-14
 
-### `npm run eject`
+## Notes & next steps
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- The contact form currently uses a local `alert`. Pass an `onSubmit` handler to `ContactForm` to integrate with your backend.
+- Consider moving the lazy-load logic to a small utility hook in `src/lib/utils.js` if you plan to reuse it.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Author: Lens & Light
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+License: MIT
