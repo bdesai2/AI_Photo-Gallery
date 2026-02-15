@@ -2,81 +2,80 @@
   "heroImages": [
     { "url": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=1600&h=900&fit=crop", "alt": "Featured Photography 1" },
     { "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&h=900&fit=crop", "alt": "Featured Photography 2" },
-    { "url": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1600&h=900&fit=crop", "alt": "Featured Photography 3" },
-    { "url": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1600&h=900&fit=crop", "alt": "Featured Photography 4" }
+    { "url": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1600&h=900&fit=crop", "alt": "Featured Photography 3" },
+    { "url": "https://images.unsplash.com/photo-1502005097973-6a7082348e28?w=1600&h=900&fit=crop", "alt": "Featured Photography 4" }
   ],
-
   "albums": [
     {
       "id": 1,
       "title": "Portraits",
-      "thumbnail": "/images/albums/portraits/thumbnail.jpg",
+      "thumbnail": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&h=800&fit=crop",
       "count": 24,
       "images": [
-        "/images/albums/portraits/portraits1.jpg",
-        "/images/albums/portraits/portraits2.jpg",
-        "/images/albums/portraits/portraits3.jpg",
-        "/images/albums/portraits/portraits4.jpg"
+        "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1200&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=1200&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=1200&h=800&fit=crop"
       ]
     },
     {
       "id": 2,
       "title": "Landscapes",
-      "thumbnail": "/images/albums/landscapes/thumbnail.jpg",
+      "thumbnail": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=800&fit=crop",
       "count": 32,
       "images": [
-        "/images/albums/landscapes/landscapes1.jpg",
-        "/images/albums/landscapes/landscapes2.jpg",
-        "/images/albums/landscapes/landscapes3.jpg",
-        "/images/albums/landscapes/landscapes4.jpg"
+        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1200&h=800&fit=crop"
       ]
     },
     {
       "id": 3,
       "title": "Urban",
-      "thumbnail": "/images/albums/urban/thumbnail.jpg",
+      "thumbnail": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800&h=800&fit=crop",
       "count": 18,
       "images": [
-        "/images/albums/urban/urban1.jpg",
-        "/images/albums/urban/urban2.jpg",
-        "/images/albums/urban/urban3.jpg",
-        "/images/albums/urban/urban4.jpg"
+        "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1200&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1200&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1514565131-fce0801e5785?w=1200&h=800&fit=crop"
       ]
     },
     {
       "id": 4,
       "title": "Wildlife",
-      "thumbnail": "/images/albums/wildlife/thumbnail.jpg",
+      "thumbnail": "https://images.unsplash.com/photo-1484406566174-9da000fda645?w=800&h=800&fit=crop",
       "count": 28,
       "images": [
-        "/images/albums/wildlife/wildlife1.jpg",
-        "/images/albums/wildlife/wildlife2.jpg",
-        "/images/albums/wildlife/wildlife3.jpg",
-        "/images/albums/wildlife/wildlife4.jpg"
+        "https://images.unsplash.com/photo-1484406566174-9da000fda645?w=1200&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1456926631375-92c8ce872def?w=1200&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1535083783855-76ae62b2914e?w=1200&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=1200&h=800&fit=crop"
       ]
     },
     {
       "id": 5,
       "title": "Architecture",
-      "thumbnail": "/images/albums/architecture/thumbnail.jpg",
+      "thumbnail": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&h=800&fit=crop",
       "count": 21,
       "images": [
-        "/images/albums/architecture/architecture1.jpg",
-        "/images/albums/architecture/architecture2.jpg",
-        "/images/albums/architecture/architecture3.jpg",
-        "/images/albums/architecture/architecture4.jpg"
+        "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1200&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=1200&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?w=1200&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1502005097973-6a7082348e28?w=1200&h=800&fit=crop"
       ]
     },
     {
       "id": 6,
       "title": "Street",
-      "thumbnail": "/images/albums/street/thumbnail.jpg",
+      "thumbnail": "https://images.unsplash.com/photo-1520034475321-cbe63696469a?w=800&h=800&fit=crop",
       "count": 16,
       "images": [
-        "/images/albums/street/street1.jpg",
-        "/images/albums/street/street2.jpg",
-        "/images/albums/street/street3.jpg",
-        "/images/albums/street/street4.jpg"
+        "https://images.unsplash.com/photo-1520034475321-cbe63696469a?w=1200&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=1200&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=1200&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1513537086458-bc618b89370a?w=1200&h=800&fit=crop"
       ]
     }
   ],
@@ -84,37 +83,37 @@
     {
       "id": "us-national-parks",
       "title": "US National Parks",
-      "thumbnail": "/images/projects/us-national-parks/thumbnail.jpg",
+      "thumbnail": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=800&fit=crop",
       "description": "A collection of national parks visited across the United States.",
       "galleries": [
         {
           "id": "yellowstone",
           "title": "Yellowstone",
-          "thumbnail": "/images/projects/us-national-parks/yellowstone/thumbnail.jpg",
+          "thumbnail": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=800&fit=crop",
           "images": [
-            "/images/projects/us-national-parks/yellowstone/1.jpg",
-            "/images/projects/us-national-parks/yellowstone/2.jpg",
-            "/images/projects/us-national-parks/yellowstone/3.jpg"
+            "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=900&fit=crop",
+            "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop"
           ]
         },
         {
           "id": "yosemite",
           "title": "Yosemite",
-          "thumbnail": "/images/projects/us-national-parks/yosemite/thumbnail.jpg",
+          "thumbnail": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=800&fit=crop",
           "images": [
-            "/images/projects/us-national-parks/yosemite/1.jpg",
-            "/images/projects/us-national-parks/yosemite/2.jpg",
-            "/images/projects/us-national-parks/yosemite/3.jpg"
+            "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1200&h=800&fit=crop"
           ]
         },
         {
           "id": "grand-canyon",
           "title": "Grand Canyon",
-          "thumbnail": "/images/projects/us-national-parks/grand-canyon/thumbnail.jpg",
+          "thumbnail": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=800&fit=crop",
           "images": [
-            "/images/projects/us-national-parks/grand-canyon/1.jpg",
-            "/images/projects/us-national-parks/grand-canyon/2.jpg",
-            "/images/projects/us-national-parks/grand-canyon/3.jpg"
+            "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1200&h=800&fit=crop"
           ]
         }
       ]
@@ -122,17 +121,17 @@
     {
       "id": "iceland",
       "title": "Iceland",
-      "thumbnail": "/images/projects/iceland/thumbnail.jpg",
+      "thumbnail": "https://images.unsplash.com/photo-1502005097973-6a7082348e28?w=800&h=800&fit=crop",
       "description": "Landscapes and travel photos from Iceland.",
       "galleries": [
         {
           "id": "iceland-roadtrip",
           "title": "Iceland Roadtrip",
-          "thumbnail": "/images/projects/iceland/roadtrip/thumbnail.jpg",
+          "thumbnail": "https://images.unsplash.com/photo-1502005097973-6a7082348e28?w=800&h=800&fit=crop",
           "images": [
-            "/images/projects/iceland/roadtrip/1.jpg",
-            "/images/projects/iceland/roadtrip/2.jpg",
-            "/images/projects/iceland/roadtrip/3.jpg"
+            "https://images.unsplash.com/photo-1502005097973-6a7082348e28?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&h=800&fit=crop"
           ]
         }
       ]
