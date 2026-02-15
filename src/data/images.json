@@ -1,9 +1,9 @@
 {
   "heroImages": [
-    { "url": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=1600&h=900&fit=crop", "alt": "Featured Photography 1" },
-    { "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&h=900&fit=crop", "alt": "Featured Photography 2" },
-    { "url": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1600&h=900&fit=crop", "alt": "Featured Photography 3" },
-    { "url": "https://images.unsplash.com/photo-1502005097973-6a7082348e28?w=1600&h=900&fit=crop", "alt": "Featured Photography 4" }
+    { "url": "/images/hero/hero1.jpg", "alt": "Featured Photography 1" },
+    { "url": "/images/hero/hero2.jpg", "alt": "Featured Photography 2" },
+    { "url": "/images/hero/hero3.jpg", "alt": "Featured Photography 3" },
+    { "url": "/images/hero/hero4.jpg", "alt": "Featured Photography 4" }
   ],
   "albums": [
     {
