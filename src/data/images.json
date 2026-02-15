@@ -1,9 +1,9 @@
 {
   "heroImages": [
-    { "url": "/images/hero/hero1.jpg", "alt": "Featured Photography 1" },
-    { "url": "/images/hero/hero2.jpg", "alt": "Featured Photography 2" },
-    { "url": "/images/hero/hero3.jpg", "alt": "Featured Photography 3" },
-    { "url": "/images/hero/hero4.jpg", "alt": "Featured Photography 4" }
+    { "url": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771123450/_MG_3909_ok9zne.jpg", "alt": "Sealions at Cabo Marina" },
+    { "url": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771123331/hero2_fdwqph.jpg", "alt": "Sunset beach" },
+    { "url": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771123176/hero4_krh99f.jpg", "alt": "Land formations in ocean" },
+    { "url": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771123031/hero3_e4hanc.jpg", "alt": "Garza Blanca Resort" }
   ],
   "albums": [
     {
