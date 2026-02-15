@@ -9,49 +9,57 @@
     {
       "id": 1,
       "title": "Portraits",
-      "thumbnail": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&h=800&fit=crop",
-      "count": 24,
+      "thumbnail": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771133439/DSC00427_plfbiu.jpg",
+      "count": 5,
       "images": [
-        "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=1200&h=800&fit=crop"
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771133439/DSC00427_plfbiu.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771133438/DSC08240_jrw4t5.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771133442/DSC00986_pxygpb.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771133043/DSC01339_dydo55.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771133043/DSC03644_ywquur.jpg"
       ]
     },
     {
       "id": 2,
       "title": "Landscapes",
-      "thumbnail": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=800&fit=crop",
-      "count": 32,
+      "thumbnail": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771133483/DSC06846_uhy8me.jpg",
+      "count": 9,
       "images": [
-        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1200&h=800&fit=crop"
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771133483/DSC06846_uhy8me.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771133411/DSC04653_h6m2ep.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771133491/20240710_174602_joafml.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136174/20220701_095938_lonpnf.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136174/DSC00741_tajilh.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136174/DSC07910_npz5i6.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136175/DSC09199_v2wlr7.jpg",
       ]
     },
     {
       "id": 3,
       "title": "Urban",
-      "thumbnail": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800&h=800&fit=crop",
-      "count": 18,
+      "thumbnail": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136279/DSC08751_ygd9gi.jpg",
+      "count": 3,
       "images": [
-        "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1514565131-fce0801e5785?w=1200&h=800&fit=crop"
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771138174/DSC02279_ufjlot.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136279/DSC08751_ygd9gi.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771138177/DSC02333_jfrstl.jpg"
       ]
     },
     {
       "id": 4,
       "title": "Wildlife",
-      "thumbnail": "https://images.unsplash.com/photo-1484406566174-9da000fda645?w=800&h=800&fit=crop",
-      "count": 28,
+      "thumbnail": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771135508/DSC09774_ek1yje.jpg",
+      "count": 9,
       "images": [
-        "https://images.unsplash.com/photo-1484406566174-9da000fda645?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1456926631375-92c8ce872def?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1535083783855-76ae62b2914e?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=1200&h=800&fit=crop"
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771137677/DSC01307_hel2hg.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136225/DSC08502_zx8x4r.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136223/DSC08489_nhk5rv.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136222/DSC08477_kcqmlv.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136221/DSC08828_ogpu0h.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771135508/DSC07090_qzvu66.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771135508/DSC09774_ek1yje.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771135508/DSC07252_bjj5li.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771134454/DSC09692_gfelb2.jpg"
       ]
     },
     {
@@ -69,6 +77,28 @@
     {
       "id": 6,
       "title": "Street",
+      "thumbnail": "https://images.unsplash.com/photo-1520034475321-cbe63696469a?w=800&h=800&fit=crop",
+      "count": 16,
+      "images": [
+        "https://images.unsplash.com/photo-1520034475321-cbe63696469a?w=1200&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=1200&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=1200&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1513537086458-bc618b89370a?w=1200&h=800&fit=crop"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Food",
+      "thumbnail": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771133514/DSC08526_sbltzt.jpg",
+      "count": 2,
+      "images": [
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771133514/DSC08526_sbltzt.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771133058/20240718_161401_hqlxnf.jpg"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Night Sky",
       "thumbnail": "https://images.unsplash.com/photo-1520034475321-cbe63696469a?w=800&h=800&fit=crop",
       "count": 16,
       "images": [
