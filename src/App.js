@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import HeroSlider from './components/HeroSlider';
 import Gallery from './components/Gallery';
+import Projects from './components/Projects';
 import AlbumView from './components/AlbumView';
 import ImageModal from './components/ImageModal';
 import ContactForm from './components/ContactForm';
@@ -91,6 +92,8 @@ const PhotographyPortfolio = () => {
           </div>
         ) : currentPage === 'gallery' ? (
           <Gallery setCurrentPage={setCurrentPage} setSelectedAlbum={setSelectedAlbum} />
+        ) : currentPage === 'projects' ? (
+          <Projects />
         ) : currentPage === 'album' ? (
           <AlbumView
             selectedAlbum={selectedAlbum}

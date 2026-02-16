@@ -5,6 +5,7 @@ const Header = ({ currentPage, setCurrentPage, mobileMenuOpen, setMobileMenuOpen
   const navItems = [
     { id: 'home', label: 'Home', icon: Home },
     { id: 'gallery', label: 'Gallery', icon: Grid },
+    { id: 'projects', label: 'Projects', icon: Grid },
     { id: 'contact', label: 'Contact', icon: Mail }
   ];
 

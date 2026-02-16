@@ -19,13 +19,12 @@ A modern, responsive photography portfolio website built with React, showcasing 
 - Lazy loading for optimal performance
 - Hover effects and smooth scaling animations
 
-### 🖥️ **User Experience**
+### 🗺️ **Projects Page**
 
-- Fixed navigation header with mobile menu
-- Hero slider with auto-play functionality
-- Featured collections on homepage
-- Contact form with validation
-- Social media integration
+- Interactive US map with national park locations
+- Clickable pins showing park information and photos
+- National parks photography project showcase
+- Detailed park descriptions and image galleries
 
 ### ⚡ **Performance**
 
@@ -69,9 +68,9 @@ A modern, responsive photography portfolio website built with React, showcasing 
 
 - **Home**: View the hero slider and featured photo collections
 - **Gallery**: Browse all photo albums
+- **Projects**: Explore ongoing photography projects, including the national parks project with an interactive map
 - **Album View**: Click on any album to view individual photos
 - **Image Modal**: Click on photos to view them in full screen with navigation
-- **Contact**: Use the contact form to get in touch
 
 ## Project Structure
 
@@ -81,11 +80,12 @@ src/
 │   ├── Header.js          # Navigation component
 │   ├── HeroSlider.js      # Hero image slider
 │   ├── Gallery.js         # Album grid display
+│   ├── Projects.js        # Projects page with national parks map
 │   ├── AlbumView.js       # Individual album view
 │   ├── ImageModal.js      # Full-screen image viewer
 │   ├── ContactForm.js     # Contact form component
 │   └── Footer.js          # Footer component
-├── data.js                # Photo album data
+├── data.js                # Photo album and national parks data
 ├── App.js                 # Main application component
 ├── index.js               # Application entry point
 └── index.css              # Global styles
@@ -130,6 +130,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   - Interactive gallery with modal viewer
   - Contact form functionality
   - Optimized performance with lazy loading
+  - **NEW**: Projects page with national parks interactive map
 
 ### Version 0.1.0 (Development)
 
