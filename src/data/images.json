@@ -33,38 +33,38 @@
         "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136174/DSC07910_npz5i6.jpg",
         "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136175/DSC09199_v2wlr7.jpg"
       ]
-    },
+    },    
     {
       "id": 3,
-      "title": "Urban",
-      "thumbnail": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136279/DSC08751_ygd9gi.jpg",
-      "count": 3,
-      "images": [
-        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771138174/DSC02279_ufjlot.jpg",
-        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136279/DSC08751_ygd9gi.jpg",
-        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771138177/DSC02333_jfrstl.jpg"
-      ]
-    },
-    {
-      "id": 4,
       "title": "Wildlife",
       "thumbnail": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771135508/DSC09774_ek1yje.jpg",
       "count": 9,
       "images": [
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771135508/DSC09774_ek1yje.jpg",
         "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771137677/DSC01307_hel2hg.jpg",
         "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136225/DSC08502_zx8x4r.jpg",
         "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136223/DSC08489_nhk5rv.jpg",
         "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136222/DSC08477_kcqmlv.jpg",
         "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136221/DSC08828_ogpu0h.jpg",
-        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771135508/DSC07090_qzvu66.jpg",
-        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771135508/DSC09774_ek1yje.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771135508/DSC07090_qzvu66.jpg",        
         "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771135508/DSC07252_bjj5li.jpg",
         "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771134454/DSC09692_gfelb2.jpg"
       ]
     },
     {
+      "id": 4,
+      "title": "Urban",
+      "thumbnail": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136279/DSC08751_ygd9gi.jpg",
+      "count": 3,
+      "images": [
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136279/DSC08751_ygd9gi.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771138174/DSC02279_ufjlot.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771138177/DSC02333_jfrstl.jpg"
+      ]
+    },
+    {
       "id": 5,
-      "title": "Architecture",
+      "title": "Events",
       "thumbnail": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&h=800&fit=crop",
       "count": 21,
       "images": [

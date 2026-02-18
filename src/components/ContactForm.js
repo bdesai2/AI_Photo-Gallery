@@ -1,21 +1,16 @@
 import React, { useState } from 'react';
-import { Mail, Instagram, Facebook } from 'lucide-react';
+import { Mail, Instagram, Aperture, CheckCircle, XCircle } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
-<<<<<<< HEAD
-const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+// ─── EmailJS Configuration ───────────────────────────────────────────────────
+// Replace these values with your actual EmailJS credentials
+// See setup instructions below
+const EMAILJS_SERVICE_ID  = 'service_6spcluk';
+const EMAILJS_TEMPLATE_ID = 'template_1joek9d';
+const EMAILJS_PUBLIC_KEY  = '64a0_XTqLecNjn6XtWH1m';
+// ─────────────────────────────────────────────────────────────────────────────
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! I will get back to you soon.');
-    setFormData({ name: '', email: '', message: '' });
-=======
+
 // ContactForm: Contact section with profile card and email form inputs
 // Accepts onSubmit handler prop for backend integration (currently uses local alert demo)
 const ContactForm = ({ onSubmit }) => {
@@ -25,56 +20,105 @@ const ContactForm = ({ onSubmit }) => {
     message: '',
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
+   // Inline validation errors
+  const [errors, setErrors] = useState({});
+
+  // Submission state: 'idle' | 'loading' | 'success' | 'error'
+  const [submitStatus, setSubmitStatus] = useState('idle');
+
+  // ── Validation ──────────────────────────────────────────────────────────────
+  const validate = () => {
+    const newErrors = {};
+
+    if (!formData.name.trim())
+      newErrors.name = 'Name is required.';
+    else if (formData.name.trim().length < 2)
+      newErrors.name = 'Name must be at least 2 characters.';
+
+    if (!formData.email.trim())
+      newErrors.email = 'Email is required.';
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email))
+      newErrors.email = 'Please enter a valid email address.';
+
+    if (!formData.message.trim())
+      newErrors.message = 'Message is required.';
+    else if (formData.message.trim().length < 10)
+      newErrors.message = 'Message must be at least 10 characters.';
+
+    return newErrors;
+  };
+
+  // Validate a single field on blur
+  const handleBlur = (e) => {
+    const { name } = e.target;
+    const fieldErrors = validate();
+    setErrors((prev) => ({
       ...prev,
-      [name]: value,
+      [name]: fieldErrors[name] || null,
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (formData.name && formData.email && formData.message) {
-      if (onSubmit) {
-        onSubmit(formData);
-      }
-      setFormData({ name: '', email: '', message: '' });
-    } else {
-      alert('Please fill in all fields.');
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value, }));
+    // Clear error for this field on change
+    if (errors[name]) {
+      setErrors((prev) => ({ ...prev, [name]: null }));
     }
->>>>>>> 7eaa6286336b021a2766dc51e2de6beddf8b655c
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Run full validation first
+    const validationErrors = validate();
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      return;
+    }
+
+    setSubmitStatus('loading');
+
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name:    formData.name,
+          from_email:   formData.email,
+          message:      formData.message,
+          to_name:      'Bhargav',
+        },
+        EMAILJS_PUBLIC_KEY
+      );
+
+      setSubmitStatus('success');
+      setFormData({ name: '', email: '', message: '' });
+      setErrors({});
+
+      if (onSubmit) onSubmit(formData);
+
+      // Reset back to idle after 5 seconds
+      setTimeout(() => setSubmitStatus('idle'), 5000);
+
+    } catch (err) {
+      console.error('EmailJS error:', err);
+      setSubmitStatus('error');
+      // Reset back to idle after 5 seconds
+      setTimeout(() => setSubmitStatus('idle'), 5000);
+    }
+  };
+
+  //Field helper: border color based on error/valid state
+  const fieldClass = (name) => {
+    const base = 'w-full px-4 py-3 bg-neutral-900 text-white border rounded-lg focus:outline-none transition-colors';
+    if (errors[name]) return `${base} border-red-500 focus:border-red-500`;
+    if (formData[name] && !errors[name]) return `${base} border-green-500 focus:border-green-500`;
+    return `${base} border-neutral-700 focus:border-blue-500`;
   };
 
   return (
     <section className="py-20 px-4 md:px-8 bg-neutral-800">
-<<<<<<< HEAD
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-light text-white mb-12 text-center tracking-wide">
-          Get In Touch
-        </h2>
-        <div className="grid md:grid-cols-2 gap-12">
-          <div className="bg-neutral-700 rounded-lg p-8 flex flex-col items-center text-center">
-            <div className="w-32 h-32 rounded-full overflow-hidden mb-6 border-4 border-neutral-600">
-              <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop"
-                alt="Profile"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <h3 className="text-2xl font-light text-white mb-4">John Anderson</h3>
-            <div className="space-y-4 text-neutral-300">
-              <a href="mailto:contact@lensandlight.com" className="flex items-center justify-center gap-2 hover:text-white transition-colors">
-                <Mail className="w-5 h-5" />
-                contact@lensandlight.com
-              </a>
-              <div className="flex gap-6 justify-center pt-4">
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                  <Instagram className="w-6 h-6" />
-                </a>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                  <Facebook className="w-6 h-6" />
-=======
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-light text-white mb-16 text-center tracking-wide">Get In Touch</h2>
 
@@ -83,95 +127,102 @@ const ContactForm = ({ onSubmit }) => {
           <div className="flex flex-col justify-center">
             <div className="bg-neutral-900 rounded-lg p-8 shadow-lg">
               <div className="w-32 h-32 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto mb-6"></div>
-              <h3 className="text-2xl font-light text-white text-center mb-2">Alex Richardson</h3>
+              <h3 className="text-2xl font-light text-white text-center mb-2">Bhargav Desai</h3>
               <p className="text-neutral-400 text-center mb-6">Professional Photographer & Visual Storyteller</p>
               <p className="text-neutral-400 text-center text-sm mb-8 leading-relaxed">
-                Capturing moments that tell stories. Specializing in portrait, landscape, and documentary photography.
+                Capturing moments that tell stories. Specializing in portrait, landscape, events, and wildlife photography.
               </p>
               <div className="flex justify-center gap-6">
-                <a href="mailto:alex@example.com" className="text-neutral-400 hover:text-white transition-colors">
+                <a href="mailto:bdesai2@gmail.com" className="text-neutral-400 hover:text-white transition-colors">
                   <Mail size={24} />
                 </a>
-                <a href="#" className="text-neutral-400 hover:text-white transition-colors">
+                <a href="https://www.instagram.com/bdesai2" className="text-neutral-400 hover:text-white transition-colors">
                   <Instagram size={24} />
                 </a>
-                <a href="#" className="text-neutral-400 hover:text-white transition-colors">
-                  <Facebook size={24} />
->>>>>>> 7eaa6286336b021a2766dc51e2de6beddf8b655c
+                <a href="https://gurushots.com/bdesai2/" className="text-neutral-400 hover:text-white transition-colors">
+                  <Aperture size={24} />
                 </a>
               </div>
             </div>
           </div>
 
-<<<<<<< HEAD
-          <div className="space-y-6">
-            <input
-              type="text"
-              placeholder="Your Name"
-              value={formData.name}
-              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              className="w-full px-4 py-3 bg-neutral-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-500"
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              value={formData.email}
-              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              className="w-full px-4 py-3 bg-neutral-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-500"
-            />
-            <textarea
-              placeholder="Your Message"
-              rows="6"
-              value={formData.message}
-              onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-              className="w-full px-4 py-3 bg-neutral-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-500 resize-none"
-            />
-            <button
-              onClick={handleSubmit}
-              className="w-full py-3 bg-white text-neutral-900 rounded-lg font-medium hover:bg-neutral-200 transition-colors"
-            >
-              Send Message
-            </button>
-=======
           {/* Contact Form */}
           <div>
+            {/* Success Banner */}
+            {submitStatus === 'success' && (
+              <div className="flex items-center gap-3 bg-green-900 border border-green-600 text-green-300 px-4 py-3 rounded-lg mb-6 animate-fadeIn">
+                <CheckCircle size={20} className="shrink-0" />
+                <p className="text-sm">Message sent! Thank you, I'll get back to you soon.</p>
+              </div>
+            )}
+            {/* Error Banner */}
+            {submitStatus === 'error' && (
+              <div className="flex items-center gap-3 bg-red-900 border border-red-600 text-red-300 px-4 py-3 rounded-lg mb-6 animate-fadeIn">
+                <XCircle size={20} className="shrink-0" />
+                <p className="text-sm">Something went wrong. Please try again or email me directly.</p>
+              </div>
+            )}
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="block text-white text-sm font-medium mb-2">Name</label>
-                <input type="text" name="name" value={formData.name} onChange={handleChange}
-                  className="w-full px-4 py-3 bg-neutral-900 text-white border border-neutral-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors"
-                  placeholder="Your name"
-                />
+                <input type="text" name="name" value={formData.name} onChange={handleChange} onBlur={handleBlur}
+                  className={fieldClass('name')} placeholder="Your name" />
+                {errors.name && (
+                  <p className="mt-1 text-red-400 text-xs flex items-center gap-1">
+                    <XCircle size={12} /> {errors.name}
+                  </p>
+                )}
               </div>
               <div>
                 <label className="block text-white text-sm font-medium mb-2">Email</label>
-                <input type="email" name="email" value={formData.email} onChange={handleChange}
-                  className="w-full px-4 py-3 bg-neutral-900 text-white border border-neutral-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors"
-                  placeholder="your@email.com"
+                <input type="email" name="email" value={formData.email} onChange={handleChange} onBlur={handleBlur}
+                  className={fieldClass('email')} placeholder="your@email.com"
                 />
+                {errors.email && (
+                  <p className="mt-1 text-red-400 text-xs flex items-center gap-1">
+                    <XCircle size={12} /> {errors.email}
+                  </p>
+                )}
               </div>
               <div>
                 <label className="block text-white text-sm font-medium mb-2">Message</label>
                 <textarea name="message" value={formData.message} onChange={handleChange} rows="5"
-                  className="w-full px-4 py-3 bg-neutral-900 text-white border border-neutral-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors resize-none"
+                  className={`${fieldClass('message')} resize-none`} onBlur={handleBlur}
                   placeholder="Your message..."
                 ></textarea>
+                {/* Character count */}
+                <p className="mt-1 text-neutral-500 text-xs text-right">
+                  {formData.message.length} characters
+                  {formData.message.length < 10 && formData.message.length > 0 &&
+                    <span className="text-red-400"> (min 10)</span>
+                  }
+                </p>
+                {errors.message && (
+                  <p className="mt-1 text-red-400 text-xs flex items-center gap-1">
+                    <XCircle size={12} /> {errors.message}
+                  </p>
+                )}
               </div>
               <button
-                type="submit"
-                className="w-full px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
-              > Send Message </button>
+                type="submit" disabled={submitStatus === 'loading'}
+                className="w-full px-6 py-3 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-800 disabled:cursor-not-allowed text-white font-medium rounded-lg transition-colors flex items-center justify-center gap-2"                
+              >{submitStatus === 'loading' ? (
+                  <>
+                    {/* Spinner */}
+                    <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z" />
+                    </svg>
+                    Sending...
+                  </>
+                ) : (
+                  'Send Message'
+                )}</button>
             </form>
->>>>>>> 7eaa6286336b021a2766dc51e2de6beddf8b655c
           </div>
         </div>
       </div>
     </section>
   );
 };
-
-<<<<<<< HEAD
 export default ContactForm;
-=======
-export default ContactForm;
->>>>>>> 7eaa6286336b021a2766dc51e2de6beddf8b655c
