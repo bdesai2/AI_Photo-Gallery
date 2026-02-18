@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import Header from './components/Header';
 import HeroCarousel from './components/HeroCarousel';
 import AlbumsGrid from './components/AlbumsGrid';
@@ -8,6 +9,8 @@ import imagesData from './data/images.json';
 import ProjectsGrid from './components/ProjectsGrid';
 import ProjectPage from './components/ProjectPage';
 import { useLazyLoadImages } from './lib/utils';
+import SEO from './components/SEO';
+import { organizationSchema, personSchema } from './lib/schemas';
 
 // PhotographyPortfolio: top-level page component that keeps application state
 // and orchestrates composed child components. Most UI is delegated to
@@ -77,8 +80,57 @@ const PhotographyPortfolio = () => {
     }
   };
 
+  // Determine SEO title and description based on current page
+  const getPageSEO = () => {
+    const baseUrl = 'https://yourportfolio.com';
+    switch (currentPage) {
+      case 'home':
+        return {
+          title: 'Professional Photography Portfolio | Landscapes, Portraits & More',
+          description: 'Explore stunning photography across landscapes, portraits, urban scenes, wildlife, street photography and architectural works. Award-winning photographer portfolio.',
+          url: baseUrl,
+        };
+      case 'albums':
+        return {
+          title: 'Photography Collections | All Albums',
+          description: 'Browse all photography collections including landscapes, portraits, wildlife, urban, street photography and more.',
+          url: `${baseUrl}/albums`,
+        };
+      case 'projects':
+        return {
+          title: 'Photography Projects | Featured Works',
+          description: 'Discover featured photography projects and detailed collections from around the world.',
+          url: `${baseUrl}/projects`,
+        };
+      default:
+        return {
+          title: 'Professional Photography Portfolio',
+          description: 'Explore stunning photography across landscapes, portraits, urban scenes, wildlife, street photography and architectural works.',
+          url: baseUrl,
+        };
+    }
+  };
+
+  const pageSEO = getPageSEO();
+
   return (
     <div className="min-h-screen bg-neutral-900">
+      <SEO 
+        title={pageSEO.title} 
+        description={pageSEO.description}
+        url={pageSEO.url}
+      />
+      
+      {/* Schema.org structured data for better SEO */}
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(organizationSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(personSchema)}
+        </script>
+      </Helmet>
+
       <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
 
       {/* Main content area. Navigation is provided by `Header`. */}

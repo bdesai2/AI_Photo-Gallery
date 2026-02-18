@@ -126,7 +126,9 @@ const ContactForm = ({ onSubmit }) => {
           {/* Profile Card */}
           <div className="flex flex-col justify-center">
             <div className="bg-neutral-900 rounded-lg p-8 shadow-lg">
-              <div className="w-32 h-32 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto mb-6"></div>
+              <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden border-4 border-neutral-700">
+                <img src="https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136308/D6bDLGVZT0aJHPvqzNgRfg_c8kcec.jpg" alt="Bhargav Desai" className="w-full h-full object-cover" />
+              </div>
               <h3 className="text-2xl font-light text-white text-center mb-2">Bhargav Desai</h3>
               <p className="text-neutral-400 text-center mb-6">Professional Photographer & Visual Storyteller</p>
               <p className="text-neutral-400 text-center text-sm mb-8 leading-relaxed">

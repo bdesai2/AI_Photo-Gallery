@@ -1,3 +1,14 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+
+# Disallow admin and system files
+Disallow: /admin
+Disallow: /.git
+Disallow: /node_modules
+
+# Sitemap location
+Sitemap: https://photofy.me/sitemap.xml
+
+# Crawl delay (optional - 1 second)
+Crawl-delay: 1

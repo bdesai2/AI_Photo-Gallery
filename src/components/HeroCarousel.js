@@ -19,7 +19,7 @@ export default function HeroCarousel({ heroImages }) {
   const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + heroImages.length) % heroImages.length);
 
   return (
-    <div className="relative h-screen overflow-hidden">
+    <div className="relative h-64 md:h-80 lg:h-screen overflow-hidden">
       {heroImages.map((img, index) => (
         <div
           key={index}
@@ -27,7 +27,7 @@ export default function HeroCarousel({ heroImages }) {
             index === currentSlide ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <img src={img.url} alt={img.alt} className="w-full h-full object-cover" />
+          <img src={img.url} alt={img.alt} className="w-full h-full object-contain md:object-cover" />
           <div className="absolute inset-0 bg-black bg-opacity-40" />
         </div>
       ))}

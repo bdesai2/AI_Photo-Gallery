@@ -26,13 +26,13 @@ export default function GalleryModal({ selectedAlbum, selectedImage, closeGaller
       </button>
 
       {/* Image + caption */}
-      <div className="max-w-6xl max-h-screen px-16 py-8 flex flex-col items-center">
+      <div className="w-full h-full max-h-screen px-4 md:px-16 py-8 flex flex-col items-center justify-center">
         <img
           src={selectedAlbum.images[selectedImage]}
           alt={`${selectedAlbum.title} ${selectedImage + 1}`}
-          className="max-w-full max-h-[80vh] object-contain"
+          className="w-full max-h-[85vh] object-contain"
         />
-        <p className="text-white mt-4 text-center">
+        <p className="text-white mt-4 text-center text-sm md:text-base">
           {selectedAlbum.title} - {selectedImage + 1} of {selectedAlbum.images.length}
         </p>
       </div>

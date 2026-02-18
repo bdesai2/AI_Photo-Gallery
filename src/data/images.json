@@ -14,6 +14,7 @@
       "images": [
         "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771133439/DSC00427_plfbiu.jpg",
         "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771133438/DSC08240_jrw4t5.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771403695/DSC06029_vkfmkm.jpg",
         "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771133442/DSC00986_pxygpb.jpg",
         "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771133043/DSC01339_dydo55.jpg",
         "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771133043/DSC03644_ywquur.jpg"
@@ -31,7 +32,8 @@
         "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136174/20220701_095938_lonpnf.jpg",
         "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136174/DSC00741_tajilh.jpg",
         "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136174/DSC07910_npz5i6.jpg",
-        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136175/DSC09199_v2wlr7.jpg"
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136175/DSC09199_v2wlr7.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771406698/20210706_110928_h6izid.jpg"
       ]
     },    
     {
@@ -41,71 +43,91 @@
       "count": 9,
       "images": [
         "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771135508/DSC09774_ek1yje.jpg",
-        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771137677/DSC01307_hel2hg.jpg",
-        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136225/DSC08502_zx8x4r.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771407659/zebra_mutwyz.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771405517/DSC06175_fzpgbi.jpg",
         "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136223/DSC08489_nhk5rv.jpg",
-        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136222/DSC08477_kcqmlv.jpg",
-        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136221/DSC08828_ogpu0h.jpg",
-        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771135508/DSC07090_qzvu66.jpg",        
-        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771135508/DSC07252_bjj5li.jpg",
-        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771134454/DSC09692_gfelb2.jpg"
-      ]
-    },
-    {
-      "id": 4,
-      "title": "Urban",
-      "thumbnail": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136279/DSC08751_ygd9gi.jpg",
-      "count": 3,
-      "images": [
-        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136279/DSC08751_ygd9gi.jpg",
-        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771138174/DSC02279_ufjlot.jpg",
-        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771138177/DSC02333_jfrstl.jpg"
-      ]
-    },
-    {
-      "id": 5,
-      "title": "Events",
-      "thumbnail": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&h=800&fit=crop",
-      "count": 21,
-      "images": [
-        "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1502005097973-6a7082348e28?w=1200&h=800&fit=crop"
-      ]
-    },
-    {
-      "id": 6,
-      "title": "Street",
-      "thumbnail": "https://images.unsplash.com/photo-1520034475321-cbe63696469a?w=800&h=800&fit=crop",
-      "count": 16,
-      "images": [
-        "https://images.unsplash.com/photo-1520034475321-cbe63696469a?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1513537086458-bc618b89370a?w=1200&h=800&fit=crop"
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771406665/DSC07502_okke1x.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136221/DSC08828_ogpu0h.jpg"
       ]
     },
     {
       "id": 7,
       "title": "Food",
       "thumbnail": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771133514/DSC08526_sbltzt.jpg",
-      "count": 2,
+      "count": 4,
       "images": [
         "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771133514/DSC08526_sbltzt.jpg",
-        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771133058/20240718_161401_hqlxnf.jpg"
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771133058/20240718_161401_hqlxnf.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771405384/rvE6a9RDSyCprNV5Ij18Tw_yvnpj2.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771405333/20201122_163951_wx6qma.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Urban",
+      "thumbnail": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136279/DSC08751_ygd9gi.jpg",
+      "count": 6,
+      "images": [
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136279/DSC08751_ygd9gi.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771403256/DSC06309_sj6xrz.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771403254/DSC01763_yjagwj.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771138174/DSC02279_ufjlot.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771403254/DSC02548_ariguw.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771138177/DSC02333_jfrstl.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Events",
+      "thumbnail": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771403428/DSC01937_eg5laa.jpg",
+      "count": 5,
+      "images": [
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771403428/DSC01937_eg5laa.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771403429/DSC07091_vj4yej.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771404004/DSC00176_av6ns9.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771403428/DSC01947_ggxv1g.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771403429/DSC02434_kkywwc.jpg"
+      ]
+    },    
+    {
+      "id": 6,
+      "title": "Birds of the World",
+      "thumbnail": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771137677/DSC01307_hel2hg.jpg",
+      "count": 7,
+      "images": [
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771137677/DSC01307_hel2hg.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136225/DSC08502_zx8x4r.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771136222/DSC08477_kcqmlv.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771135508/DSC07090_qzvu66.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771403657/DSC02586_vxnwzn.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771135508/DSC07252_bjj5li.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771134454/DSC09692_gfelb2.jpg"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Food",
+      "thumbnail": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771133514/DSC08526_sbltzt.jpg",
+      "count": 4,
+      "images": [
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771133514/DSC08526_sbltzt.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771133058/20240718_161401_hqlxnf.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771405384/rvE6a9RDSyCprNV5Ij18Tw_yvnpj2.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771405333/20201122_163951_wx6qma.jpg"
       ]
     },
     {
       "id": 8,
-      "title": "Night Sky",
-      "thumbnail": "https://images.unsplash.com/photo-1520034475321-cbe63696469a?w=800&h=800&fit=crop",
-      "count": 16,
+      "title": "Night Time",
+      "thumbnail": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771405489/DSC02450_qirwbq.jpg",
+      "count": 6,
       "images": [
-        "https://images.unsplash.com/photo-1520034475321-cbe63696469a?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1513537086458-bc618b89370a?w=1200&h=800&fit=crop"
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771405489/DSC02450_qirwbq.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771405486/DSC02428_gm24mq.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771405491/DSC03140_tmjp4k.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771405484/DSC01899_llpkmf.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771405480/DSC01879_zohkne.jpg",
+        "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771405478/DSC00426_ch4d7h.jpg"
       ]
     }
   ],
