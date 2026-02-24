@@ -1,9 +1,33 @@
 {
   "heroImages": [
-    { "url": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771123450/_MG_3909_ok9zne.jpg", "alt": "Sealions at Cabo Marina" },
-    { "url": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771123331/hero2_fdwqph.jpg", "alt": "Sunset beach" },
-    { "url": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771123176/hero4_krh99f.jpg", "alt": "Land formations in ocean" },
-    { "url": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771123031/hero3_e4hanc.jpg", "alt": "Garza Blanca Resort" }
+    {
+      "url": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771123450/_MG_3909_ok9zne.jpg",
+      "alt": "Sealions at Cabo Marina",
+      "title": "Wildlife in their Natural Habitat",
+      "description": "Capturing the beauty of marine life in their native environment",
+      "location": "Cabo San Lucas, Mexico"
+    },
+    {
+      "url": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771123331/hero2_fdwqph.jpg",
+      "alt": "Sunset beach",
+      "title": "Golden Hour Serenity",
+      "description": "The perfect moment when light and water create pure magic",
+      "location": "Tropical Beaches"
+    },
+    {
+      "url": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771123176/hero4_krh99f.jpg",
+      "alt": "Land formations in ocean",
+      "title": "Geological Wonders",
+      "description": "Ancient rock formations shaped by nature's artistry",
+      "location": "Coastal Regions"
+    },
+    {
+      "url": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771123031/hero3_e4hanc.jpg",
+      "alt": "Garza Blanca Resort",
+      "title": "Architectural Elegance",
+      "description": "Luxury meets landscape in stunning resort photography",
+      "location": "Garza Blanca, Puerto Vallarta"
+    }
   ],
   "albums": [
     {
@@ -135,8 +159,8 @@
     {
       "id": "us-national-parks",
       "title": "US National Parks",
-      "thumbnail": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=800&fit=crop",
-      "description": "A collection of national parks visited across the United States.",
+      "thumbnail": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771568521/DSC06323-Enhanced_lepxfz.jpg",
+      "description": "My ongoing project to visit and photograph all 63 US National Parks. Each park has its own unique landscapes, wildlife, and natural beauty that attracts me to them.",
       "galleries": [
         {
           "id": "arches", "title": "Arches National Park", "state": "Utah", "region": "Western US",

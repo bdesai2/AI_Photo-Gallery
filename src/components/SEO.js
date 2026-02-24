@@ -2,12 +2,12 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 const SEO = ({ 
-  title = 'Professional Photography Portfolio', 
-  description = 'Explore stunning photography across landscapes, portraits, urban scenes, wildlife, street photography and architectural works.',
+  title = 'Professional Photographer in Wylie, TX | Photography Portfolio', 
+  description = 'Award-winning photographer in Wylie, TX specializing in landscapes, portraits, events, wildlife, and commercial photography. Serving Dallas-Fort Worth area.',
   image = '/images/hero/hero-image.jpg',
   url = 'https://yourportfolio.com',
   type = 'website',
-  name = 'Photography Portfolio'
+  name = 'Professional Photography - Wylie, TX'
 }) => {
   const fullUrl = url.startsWith('http') ? url : `https://yourportfolio.com${url}`;
   const fullImageUrl = image.startsWith('http') ? image : `https://yourportfolio.com${image}`;
@@ -17,8 +17,12 @@ const SEO = ({
       {/* Basic Meta Tags */}
       <title>{title}</title>
       <meta name="description" content={description} />
-      <meta name="keywords" content="photography, portfolio, landscapes, portraits, urban, wildlife, street photography, architecture" />
+      <meta name="keywords" content="photographer in Wylie TX, photography Wylie, professional photographer Dallas, landscapes, portraits, events, wildlife photography, Plano photographer, Dallas Photographer,  Murphy TX photographer" />
       <meta name="author" content={name} />
+      <meta name="geo.position" content="33.0183;-96.5100" />
+      <meta name="ICBM" content="33.0183, -96.5100" />
+      <meta name="geo.placename" content="Wylie, Texas" />
+      <meta name="geo.region" content="US-TX" />
       
       {/* Canonical Tag */}
       <link rel="canonical" href={fullUrl} />

@@ -15,7 +15,13 @@ export const personSchema = {
     'https://www.linkedin.com/in/yourprofile',
   ],
   jobTitle: 'Professional Photographer',
-  description: 'Award-winning photographer specializing in landscapes, portraits, urban and wildlife photography.',
+  description: 'Award-winning photographer specializing in landscapes, portraits, urban and wildlife photography in Wylie, TX.',
+  areaServed: {
+    '@type': 'City',
+    name: 'Wylie',
+    addressRegion: 'TX',
+    addressCountry: 'US'
+  },
 };
 
 export const organizationSchema = {
@@ -24,7 +30,7 @@ export const organizationSchema = {
   name: 'Photography Portfolio',
   url: 'https://yourportfolio.com',
   logo: 'https://photofy.me/logo.png',
-  description: 'Professional photography portfolio showcasing diverse photography collections',
+  description: 'Professional photography services in Wylie, TX and surrounding areas - landscapes, portraits, events, and commercial photography',
   sameAs: [
     'https://www.instagram.com/yourhandle',
     'https://www.facebook.com/yourhandle',
@@ -34,6 +40,7 @@ export const organizationSchema = {
     telephone: '+1-XXX-XXX-XXXX',
     contactType: 'Customer Service',
   },
+  areaServed: ['Wylie, TX', 'Dallas, TX', 'Plano, TX', 'Murphy, TX', 'Sachse, TX', 'Rockwall, TX'],
 };
 
 export const gallerySchema = (albumTitle, images, description) => ({
@@ -63,18 +70,42 @@ export const breadcrumbSchema = (breadcrumbs) => ({
 export const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  name: 'Photography Portfolio',
+  '@id': 'https://yourportfolio.com',
+  name: 'Professional Photography - Wylie, TX',
   image: 'https://photofy.me/images/hero/hero-image.jpg',
-  description: 'Professional photography services and portfolio',
+  description: 'Award-winning professional photographer serving Wylie, TX and the Dallas-Fort Worth metropolitan area. Specializing in landscapes, portraits, events, wildlife, and commercial photography.',
   url: 'https://yourportfolio.com',
+  telephone: '+1-XXX-XXX-XXXX',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Your Street Address',
-    addressLocality: 'Your City',
-    addressRegion: 'Your State',
+    addressLocality: 'Wylie',
+    addressRegion: 'TX',
     postalCode: 'Your Zip',
     addressCountry: 'US',
   },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: '33.0183',
+    longitude: '-96.5100'
+  },
+  areaServed: [
+    {
+      '@type': 'City',
+      name: 'Wylie',
+      addressRegion: 'TX'
+    },
+    {
+      '@type': 'City',
+      name: 'Dallas',
+      addressRegion: 'TX'
+    },
+    {
+      '@type': 'City',
+      name: 'Plano',
+      addressRegion: 'TX'
+    }
+  ],
   priceRange: '$$$',
   sameAs: [
     'https://www.instagram.com/yourhandle',

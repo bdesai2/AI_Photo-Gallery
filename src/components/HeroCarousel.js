@@ -32,12 +32,17 @@ export default function HeroCarousel({ heroImages }) {
         </div>
       ))}
 
-      {/* Centered title and subtitle */}
+      {/* Centered title, subtitle, description and location */}
       <div className="absolute inset-0 flex items-center justify-center text-white z-10">
         <div className="text-center px-4">
-          <h1 className="text-5xl md:text-7xl font-light mb-4 tracking-wider animate-slideUp">LENS & LIGHT</h1>
-          <p className="text-xl md:text-2xl font-light tracking-wide animate-slideUp opacity-90">
-            Capturing Moments, Creating Memories
+          <div className="mb-2 text-sm md:text-base font-light tracking-widest opacity-75 uppercase">
+            {heroImages[currentSlide]?.location || 'Lens & Light'}
+          </div>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-light mb-4 tracking-wider animate-slideUp">
+            {heroImages[currentSlide]?.title || 'LENS & LIGHT'}
+          </h1>
+          <p className="text-lg md:text-xl font-light tracking-wide animate-slideUp opacity-90 mb-4">
+            {heroImages[currentSlide]?.description || 'Capturing Moments, Creating Memories'}
           </p>
         </div>
       </div>

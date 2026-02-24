@@ -86,26 +86,26 @@ const PhotographyPortfolio = () => {
     switch (currentPage) {
       case 'home':
         return {
-          title: 'Professional Photography Portfolio | Landscapes, Portraits & More',
-          description: 'Explore stunning photography across landscapes, portraits, urban scenes, wildlife, street photography and architectural works. Award-winning photographer portfolio.',
+          title: 'Professional Photographer in Wylie, TX | Landscapes, Portraits & More',
+          description: 'Award-winning photographer in Wylie, TX specializing in landscapes, portraits, events, wildlife, and commercial photography. Serving Plano, Dallas, Murphy, and surrounding areas.',
           url: baseUrl,
         };
       case 'albums':
         return {
-          title: 'Photography Collections | All Albums',
-          description: 'Browse all photography collections including landscapes, portraits, wildlife, urban, street photography and more.',
+          title: 'Photography Collections | All Albums | Wylie, TX Photographer',
+          description: 'Browse all photography collections including landscapes, portraits, wildlife, urban, commercial and event photography by professional photographer in Wylie, TX.',
           url: `${baseUrl}/albums`,
         };
       case 'projects':
         return {
-          title: 'Photography Projects | Featured Works',
-          description: 'Discover featured photography projects and detailed collections from around the world.',
+          title: 'Photography Projects | Featured Works | Professional Photographer Wylie TX',
+          description: 'Discover featured photography projects and detailed collections including our US National Parks photography series. Professional photography services in Wylie, TX.',
           url: `${baseUrl}/projects`,
         };
       default:
         return {
-          title: 'Professional Photography Portfolio',
-          description: 'Explore stunning photography across landscapes, portraits, urban scenes, wildlife, street photography and architectural works.',
+          title: 'Professional Photographer in Wylie, TX',
+          description: 'Award-winning photographer in Wylie, TX providing professional photography services including portraits, landscapes, events, and commercial photography for Dallas and surrounding areas.',
           url: baseUrl,
         };
     }
@@ -147,6 +147,44 @@ const PhotographyPortfolio = () => {
               <AlbumsGrid albums={albums.slice(0, 6)} onOpenAlbum={openAlbumGallery} />
             </section>
 
+            {/* Featured Projects Section */}
+            {projects.length > 0 && (
+              <section className="py-20 px-4 md:px-8 max-w-7xl mx-auto">
+                <h2 className="text-4xl font-light text-white mb-12 text-center tracking-wide">Featured Projects</h2>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                  {/* Featured project card */}
+                  {projects.map((project, index) => (
+                    <div
+                      key={project.id}
+                      className="group cursor-pointer"
+                      onClick={() => {
+                        setCurrentPage('projects');
+                        openProject(project);
+                      }}
+                    >
+                      <div className="relative overflow-hidden rounded-lg mb-6 h-96">
+                        <img
+                          src={project.thumbnail}
+                          alt={project.title}
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <button className="px-8 py-3 bg-white text-neutral-900 rounded-lg font-semibold hover:bg-neutral-100 transition-colors">
+                            Explore Project
+                          </button>
+                        </div>
+                      </div>
+                      <div>
+                        <h3 className="text-3xl font-light text-white mb-4">{project.title}</h3>
+                        <p className="text-neutral-300 text-lg leading-relaxed">{project.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
             {/* Contact form - local behaviour by default; pass a submit handler to integrate with a backend */}
             <ContactForm onSubmit={(data) => {
               alert('Thank you for your message! I will get back to you soon.');
@@ -187,8 +225,27 @@ const PhotographyPortfolio = () => {
         setSelectedImage={setSelectedImage}
       />
 
-      <footer className="bg-neutral-950 text-neutral-400 py-8 text-center">
-        <p className="text-sm">© 2026 Lens & Light Photography. All rights reserved.</p>
+      <footer className="bg-neutral-950 text-neutral-400 py-12 text-center border-t border-neutral-800">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <h3 className="text-white font-semibold mb-2">Location</h3>
+              <p className="text-sm">Wylie, Texas</p>
+              <p className="text-sm">Serving Dallas-Fort Worth Area</p>
+            </div>
+            <div>
+              <h3 className="text-white font-semibold mb-2">Services</h3>
+              <p className="text-sm">Portraits & Events</p>
+              <p className="text-sm">Commercial & Wildlife</p>
+            </div>
+            <div>
+              <h3 className="text-white font-semibold mb-2">Contact</h3>
+              <p className="text-sm">Phone: (XXX) XXX-XXXX</p>
+              <p className="text-sm">Email: info@example.com</p>
+            </div>
+          </div>
+          <p className="text-sm">© 2026 Professional Photographer in Wylie, TX. All rights reserved. | Photography Portfolio serving Wylie, Dallas, Plano, Murphy, and surrounding areas.</p>
+        </div>
       </footer>
 
       <style>{`
