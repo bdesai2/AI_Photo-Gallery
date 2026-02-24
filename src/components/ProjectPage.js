@@ -1,11 +1,15 @@
 import React from 'react';
 import AlbumsGrid from './AlbumsGrid';
+import NationalParksMap from './NationalParksMap';
 
 // ProjectPage: shows a single project's galleries (reuses AlbumsGrid).
 // `project.galleries` should be an array of album-like objects with
 // { id, title, thumbnail, images }.
 export default function ProjectPage({ project, onBack, onOpenAlbum }) {
   if (!project) return null;
+
+  // Special handling for national parks project
+  const isNationalParksProject = project.id === 'us-national-parks';
 
   return (
     <div className="py-20 px-4 md:px-8 max-w-7xl mx-auto animate-fadeIn">
@@ -16,7 +20,11 @@ export default function ProjectPage({ project, onBack, onOpenAlbum }) {
 
       {project.description && <p className="text-neutral-300 mb-8">{project.description}</p>}
 
-      <AlbumsGrid albums={project.galleries} onOpenAlbum={onOpenAlbum} />
+      {isNationalParksProject ? (
+        <NationalParksMap parks={project.galleries} onSelectPark={onOpenAlbum} />
+      ) : (
+        <AlbumsGrid albums={project.galleries} onOpenAlbum={onOpenAlbum} />
+      )}
     </div>
   );
 }
