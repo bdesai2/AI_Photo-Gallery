@@ -10,7 +10,7 @@ const AlbumPage = ({ album, onOpenImage }) => {
   const images = album.images || [];
 
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen">
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-8">
         <h1 className="text-4xl md:text-5xl font-light text-white mb-8 text-center tracking-wide">{album.title}</h1>
 
