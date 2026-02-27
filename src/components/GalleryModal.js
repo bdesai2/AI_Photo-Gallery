@@ -1,18 +1,85 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // GalleryModal: full-screen viewer for a selected album. It receives
 // navigation callbacks and the index setter from the parent so it stays
 // purely presentational and reusable.
 export default function GalleryModal({ selectedAlbum, selectedImage, closeGallery, nextImage, prevImage, setSelectedImage }) {
+  // Keyboard navigation: left/right to navigate, Esc to close
+  // Always declare the hook (hooks must be called in the same order)
+  useEffect(() => {
+    // Guard: only attach listener when modal is open with a selected image
+    if (!selectedAlbum || selectedImage === null) return;
+
+    const onKeyDown = (e) => {
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        prevImage();
+      } else if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        nextImage();
+      } else if (e.key === 'Escape') {
+        e.preventDefault();
+        closeGallery();
+      }
+    };
+
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [nextImage, prevImage, closeGallery, selectedAlbum, selectedImage]);
+
+  // Focus trap: keep focus inside modal while open and restore focus on close
+  const modalRef = useRef(null);
+  const closeBtnRef = useRef(null);
+
+  useEffect(() => {
+    if (!selectedAlbum || selectedImage === null) return;
+
+    const previousActive = document.activeElement;
+    // Focus the close button when modal opens
+    setTimeout(() => closeBtnRef.current?.focus(), 0);
+
+    const handleTab = (e) => {
+      if (e.key !== 'Tab') return;
+      const container = modalRef.current;
+      if (!container) return;
+      const focusable = Array.from(container.querySelectorAll('a[href], button, textarea, input, select, [tabindex]:not([tabindex="-1"])'))
+        .filter((el) => !el.hasAttribute('disabled'));
+      if (focusable.length === 0) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (e.shiftKey) {
+        if (document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        }
+      } else {
+        if (document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleTab);
+    return () => {
+      window.removeEventListener('keydown', handleTab);
+      // restore previous focus
+      try { previousActive?.focus(); } catch (err) {}
+    };
+  }, [selectedAlbum, selectedImage]);
+
   if (!selectedAlbum || selectedImage === null) return null;
 
   return (
-    <div className="fixed inset-0 z-50 bg-black bg-opacity-95 flex items-center justify-center animate-fadeIn">
+    <div ref={modalRef} role="dialog" aria-modal="true" aria-label={`${selectedAlbum.title} gallery`} className="fixed inset-0 z-50 bg-black bg-opacity-95 flex items-center justify-center animate-fadeIn">
       {/* Close button */}
       <button
+        ref={closeBtnRef}
         onClick={closeGallery}
         className="absolute top-4 right-4 p-2 text-white hover:bg-white hover:bg-opacity-10 rounded-full transition-all z-50"
+        aria-label="Close gallery"
       >
         <X className="w-8 h-8" />
       </button>
@@ -56,6 +123,12 @@ export default function GalleryModal({ selectedAlbum, selectedImage, closeGaller
             }`}
           />
         ))}
+      </div>
+
+      {/* Keyboard hint */}
+      <div className="absolute bottom-4 right-4 text-neutral-300 text-sm opacity-90">
+        <span className="mr-2">← → to navigate</span>
+        <span>• Esc to close</span>
       </div>
     </div>
   );

@@ -252,8 +252,7 @@ const NationalParksMap = ({ parks, onSelectPark }) => {
                 className="w-full h-40 object-cover rounded-lg mb-2"
               />
               <h4 className="text-white font-semibold text-lg">{park.title}</h4>
-              <p className="text-neutral-400 text-sm">{park.state}</p>
-              <p className="text-neutral-500 text-xs mt-2">{park.region}</p>
+              <p className="text-neutral-400 text-sm">{park.state} | {park.region} | {park.images.length} {park.images.length === 1 ? 'photo' : 'photos'}</p>
             </div>
           ))}
         </div>

@@ -158,7 +158,7 @@
   "projects": [
     {
       "id": "us-national-parks",
-      "title": "US National Parks",
+      "title": "US National Parks", "enabled": true,
       "thumbnail": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771568521/DSC06323-Enhanced_lepxfz.jpg",
       "description": "My ongoing project to visit and photograph all 63 US National Parks. Each park has its own unique landscapes, wildlife, and natural beauty that attracts me to them.",
       "galleries": [
@@ -198,7 +198,7 @@
         {
           "id": "biscayne", "title": "Biscayne National Park", "state": "Florida", "region": "Southeastern US",
           "latitude": 25.6510, "longitude": -80.0800, "visited": true,
-          "map-x": -80.0800, "map-y": 25.6510,
+          "map-x": -75.4800, "map-y": 25.77510,
           "description": "Biscayne National Park is known for its coral reefs, mangroves, and diverse marine life.",
           "thumbnail": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771569846/DSC09128_a3gg78.jpg",
           "images": [
@@ -211,7 +211,7 @@
         {
           "id": "bryce-canyon", "title": "Bryce Canyon National Park", "state": "Utah", "region": "Western US",
           "latitude": 37.5930, "longitude": -112.1871, "visited": true,
-          "map-x": -112.1871, "map-y": 37.5930,
+          "map-x": -112.5871, "map-y": 37.5930,
           "description": "Bryce Canyon National Park is known for its unique geological structures called hoodoos, which are spire-shaped rock formations.",
           "thumbnail": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771568521/DSC06323-Enhanced_lepxfz.jpg",
           "images": [
@@ -278,7 +278,7 @@
         {
           "id": "everglades", "title": "Everglades National Park", "state": "Florida", "region": "Southern US",
           "latitude": 25.2866, "longitude": -80.8987, "visited": true,
-          "map-x": -80.0800, "map-y": 25.6510,
+          "map-x": -76.8800, "map-y": 25.4510,
           "description": "Everglades National Park is known for its unique ecosystem, including wetlands, mangroves, and diverse wildlife.",
           "thumbnail": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771569593/DSC08916_bc5x6h.jpg",
           "images": [
@@ -333,7 +333,7 @@
          {
           "id": "mt-rainier", "title": "Mount Rainier National Park", "state": "Washington", "region": "Western US",
           "latitude": 46.8523, "longitude": -121.7603, "visited": true,
-          "map-x": -121.7603, "map-y": 46.8523,
+          "map-x": -119.3603, "map-y": 47.8523,
           "description": "Mount Rainier National Park is known for its iconic volcanic peak, glaciers, and diverse ecosystems.",
           "thumbnail": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771569204/DSC08918_xxhdci.jpg",
           "images": [
@@ -351,7 +351,7 @@
         {
           "id": "north-cascades", "title": "North Cascades National Park", "state": "Washington", "region": "Western US",
           "latitude": 48.7710, "longitude": -121.2980, "visited": true,
-          "map-x": -121.2980, "map-y": 48.7710,
+          "map-x": -118.2980, "map-y": 48.7710,
           "description": "North Cascades National Park is known for its rugged mountain landscapes, glaciers, and diverse ecosystems.",
           "thumbnail": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771569130/DSC08385_z9shoe.jpg",
           "images": [
@@ -368,7 +368,7 @@
         {
           "id": "olympic", "title": "Olympic National Park", "state": "Washington", "region": "Western US",
           "latitude": 47.8021, "longitude": -123.6044, "visited": true,
-          "map-x": -121.6044, "map-y": 48.8,
+          "map-x": -120.6044, "map-y": 48.4,
           "description": "Olympic National Park is known for its diverse ecosystems, including temperate rainforests, alpine regions, and rugged coastline.",
           "thumbnail": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771569041/DSC00678_mjxadf.jpg",
           "images": [
@@ -400,10 +400,10 @@
           ]
         },
         {
-          "id": "smokey-mountains", "title": "Smokey Mountains National Park", "state": "Tennessee/North Carolina", "region": "Eastern US",
+          "id": "smokey-mountains", "title": "Great Smokey Mountains National Park", "state": "Tennessee/North Carolina", "region": "Eastern US",
           "latitude": 35.6118, "longitude": -83.4895, "visited": true,
-          "map-x": -83.4895, "map-y": 35.6118,
-          "description": "Smokey Mountains National Park is known for its mist-covered mountains, diverse wildlife, and scenic beauty.",
+          "map-x": -81.4895, "map-y": 34.8118,
+          "description": "Great Smokey Mountains National Park is known for its mist-covered mountains, diverse wildlife, and scenic beauty.",
           "thumbnail": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771571180/DSC04600_dz9wmf.jpg",
           "images": [
             "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771571180/DSC04600_dz9wmf.jpg",
@@ -439,7 +439,7 @@
         {
           "id": "zion", "title": "Zion National Park", "state": "Utah", "region": "Western US",
           "latitude": 37.2982, "longitude": -113.0263, "visited": true,
-          "map-x": -115.0263, "map-y": 37.4,
+          "map-x": -113.263, "map-y": 37,
           "description": "Zion National Park is known for its towering sandstone cliffs, narrow canyons, and diverse ecosystems.",
           "thumbnail": "https://res.cloudinary.com/du9uhtjxi/image/upload/v1771568847/DSC07288_svewi3.jpg",
           "images": [
@@ -452,6 +452,34 @@
           ]
         }
       ]
-    }   
+    },    
+    {
+      "id": "state-parks",
+      "title": "US State Parks", "enabled": false,
+      "thumbnail": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&h=800&fit=crop",
+      "description": "A curated collection of state parks across the United States. Use the map filters to find parks by state and region.",
+      "galleries": [
+        {
+          "id": "state-park-texas",
+          "title": "Guadalupe River State Park",
+          "state": "Texas",
+          "region": "Southern US",
+          "map-x": -99.0,
+          "map-y": 29.8,
+          "thumbnail": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&h=800&fit=crop",
+          "images": []
+        },
+        {
+          "id": "state-park-california",
+          "title": "Big Basin Redwoods State Park",
+          "state": "California",
+          "region": "Western US",
+          "map-x": -122.2,
+          "map-y": 37.2,
+          "thumbnail": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&h=800&fit=crop",
+          "images": []
+        }
+      ]
+    }
   ]
 }

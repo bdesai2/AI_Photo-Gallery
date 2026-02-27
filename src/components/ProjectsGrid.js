@@ -5,12 +5,15 @@ import React from 'react';
 export default function ProjectsGrid({ projects, onOpenProject }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {projects.map((project, index) => (
-        <div
-          key={project.id}
-          className="group relative overflow-hidden rounded-lg cursor-pointer animate-fadeIn"
-          style={{ animationDelay: `${index * 100}ms` }}
-          onClick={() => onOpenProject && onOpenProject(project)}
+      {projects.map((project, index) => {
+        if (!project.thumbnail) return null; // Skip projects without thumbnails
+        if (project.enabled === false) return null; // Skip disabled projects
+        return (
+          <div
+            key={project.id}
+            className="group relative overflow-hidden rounded-lg cursor-pointer animate-fadeIn"
+            style={{ animationDelay: `${index * 100}ms` }}
+            onClick={() => onOpenProject && onOpenProject(project)}
         >
           <img
             data-src={project.thumbnail}
@@ -24,7 +27,8 @@ export default function ProjectsGrid({ projects, onOpenProject }) {
             {project.description && <p className="text-sm opacity-80">{project.description}</p>}
           </div>
         </div>
-      ))}
+      );
+    })}
     </div>
   );
 }
